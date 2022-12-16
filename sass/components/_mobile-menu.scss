@@ -1,0 +1,173 @@
+.mobile-menu {
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: var(--card-bg-cl);
+
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	&__container {
+		position: relative;
+		padding: 48px 25px;
+		max-width: 480px;
+		height: 100%;
+
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	&__button-open {
+		position: absolute;
+		right: 15px;
+
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		line-height: 0;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			color: var(--accent-txt-cl);
+		}
+	}
+
+	&__button-close {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		background-color: transparent;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 50%;
+		line-height: 0;
+		transform: color 250ms;
+
+		&:hover,
+		&:focus {
+			color: var(--accent-txt-cl);
+		}
+	}
+
+	&__icon {
+		fill: currentColor;
+	}
+
+	// &__navigation {
+	// 	margin-bottom: auto;
+	// }
+
+	&__navigation-item {
+		&:not(:last-child) {
+			margin-bottom: 32px;
+		}
+	}
+
+	&__navigation-link {
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 1.18;
+		color: #212121;
+		letter-spacing: 0.02em;
+
+		&:hover,
+		&:focus {
+			color: var(--accent-txt-cl);
+		}
+	}
+
+	&__navigation-link-current {
+		color: var(--accent-txt-cl);
+	}
+
+	&__contacts-list {
+		margin-bottom: 64px;
+	}
+
+	&__contacts-item {
+		&:not(:last-child) {
+			margin-bottom: 32px;
+		}
+	}
+
+	&__contacts-link {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 1.17;
+		letter-spacing: 0.02em;
+
+		color: var(--main-txt-cl);
+
+		&:hover,
+		&:focus {
+			font-size: 34px;
+			line-height: 1.18;
+
+			color: var(--accent-txt-cl);
+		}
+	}
+
+	&__mobile-contact {
+		font-size: 34px;
+			line-height: 1.18;
+
+			color: var(--accent-txt-cl);
+	}
+
+	&__social-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__social-item {
+		display: flex;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+
+			&::after {
+				content: "";
+				display: inline-flex;
+				width: 1px;
+				height: 22px;
+				background-color: rgba(33, 33, 33, 0.2);
+				margin-left: 10px;
+			}
+		}
+	}
+
+	&__social-link {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.22;
+		letter-spacing: 0.02em;
+		color: #2196f3;
+
+		&:focus,
+		&:hover {
+			color: var(--accent-txt-cl);
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}

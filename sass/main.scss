@@ -1,0 +1,22 @@
+//Utils styles
+@import "./utils/variables";
+@import "./utils/hidden-elements";
+
+//Base styles and reset
+@import "./base/reset";
+@import "./base/base";
+@import "./base/container";
+
+//Components
+@import "./components/header";
+@import "./components/mobile-menu";
+@import "./components/hero";
+@import "./components/modal-window";
+@import "./components/benefits";
+@import "./components/work";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/newsletter";
+@import "./components/register-form";
+@import "./components/portfolio";

@@ -1,0 +1,22 @@
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+.page {
+	font-family: var(--main-font);
+	color: var(--main-txt-cl);
+	font-size: 14px;
+	line-height: calc(24 / 14);
+	letter-spacing: 0.03em;
+}
+.section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	//Desktop styles
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
+}

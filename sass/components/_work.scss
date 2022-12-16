@@ -1,0 +1,60 @@
+/**
+  |============================
+  | Work
+  |============================
+*/
+.work {
+	padding-top: 0;
+
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
+}
+.work__list {
+	display: flex;
+	justify-content: space-between;
+}
+.section-title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: calc(33 / 28);
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-title-cl);
+	margin-bottom: 30px;
+
+	//desktop styles
+	@media screen and (min-width: 1200px) {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: calc(42 / 36);
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: var(--main-title-cl);
+		margin-bottom: 50px;
+	}
+}
+.work__list-item {
+	position: relative;
+}
+.work__list-item-wrapper {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--hero-txt-cl);
+	background-color: rgba(47, 48, 58, 0.8);
+
+	position: absolute;
+	bottom: 0px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 70px;
+	width: 100%;
+}

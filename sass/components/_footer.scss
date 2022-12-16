@@ -1,0 +1,123 @@
+.footer {
+	background-color: var(--main-bg-cl);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.general-footer-container {
+	margin-bottom: 0;
+	text-align: center;
+
+	//Tablet styles
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-around;
+	}
+
+	//Desktop styles
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		align-items: baseline;
+		text-align: left;
+	}
+}
+.footer-container {
+	margin-bottom: 60px;
+
+	//Tablet styles
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-bottom: 0;
+	}
+	//Desktop styles
+	@media screen and (min-width: 1200px) {
+		margin-right: 70px;
+		margin-bottom: 0;
+		flex-grow: 1;
+	}
+}
+.footer__tablet {
+	//tablet styles
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		align-items: baseline;
+
+		margin-bottom: 60px;
+	}
+
+	//desktop styles
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		align-items: baseline;
+		margin-bottom: 0;
+		margin-right: 93px;
+	}
+}
+.social-footer {
+
+	//mobile styles
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
+
+	//tablet styles
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin: 0;
+	}
+
+}
+
+.social-footer__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 44px;
+	height: 44px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background-color: #2196f3;
+		border-radius: 50%;
+	}
+}
+
+.social-footer__list {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	cursor: pointer;
+}
+
+.social-footer__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--hero-txt-cl);
+	margin-bottom: 20px;
+}
+.social-footer__icon {
+	display: block;
+	fill: var(--hero-txt-cl);
+}
+.footer__logo {
+	color: var(--hero-txt-cl);
+}
+.address {
+	font-style: normal;
+	margin-top: 20px;
+}
+.address__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+.address-map {
+	color: var(--hero-txt-cl);
+}
